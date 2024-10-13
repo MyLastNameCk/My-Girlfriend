@@ -24,10 +24,12 @@ function sendWhatsAppMessage() {
 
     // Nomor telepon tujuan (format internasional tanpa + atau spasi)
     var phoneNumber = '6285904471135'; // Ganti dengan nomor tujuan
+    var whatsappUrl = "https://wa.me/qr/EA776HKALFVDJ1" + phoneNumber + "?text=" + encodedMessage;
 
     // Buat URL WhatsApp
-    var url = `https://wa.me/${6285904471135}?text=${encodeURIComponent(message)}`;
+    // var url = `https://wa.me/${6285904471135}?text=${encodeURIComponent(message)}`;
 
     // Arahkan pengguna ke URL tersebut
-    window.location.href = 'https://wa.me/qr/EA776HKALFVDJ1';
+    // window.location.href = 'https://wa.me/qr/EA776HKALFVDJ1';
+    window.open(whatsappUrl, "_blank");
 }
