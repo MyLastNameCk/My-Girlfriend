@@ -10,3 +10,24 @@ function revealMessage() {
     message.style.visibility = 'visible';
     message.style.transition = 'visibility 0.5s ease-in-out';
 }
+
+// WhatsApp Message
+function sendWhatsAppMessage() {
+    // Ambil pesan yang ditulis oleh pengguna
+    var message = document.getElementById('whatsappMessage').value;
+
+    // Cek jika pesan kosong, tampilkan alert
+    if (message.trim() === '') {
+        alert('Tolong tulis pesan terlebih dahulu!');
+        return;
+    }
+
+    // Nomor telepon tujuan (format internasional tanpa + atau spasi)
+    var phoneNumber = '6285904471135'; // Ganti dengan nomor tujuan
+
+    // Buat URL WhatsApp
+    var url = `https://wa.me/${6285904471135}?text=${encodeURIComponent(message)}`;
+
+    // Arahkan pengguna ke URL tersebut
+    window.location.href = 'https://wa.me/qr/EA776HKALFVDJ1';
+}
