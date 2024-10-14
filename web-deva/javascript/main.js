@@ -30,9 +30,17 @@ function sendWhatsAppMessage() {
 }
 
 // Play Music
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
+//     var audio = document.getElementById('myAudio');
+//     audio.play().catch(function(error) {
+//         console.log("Autoplay was prevented. Audio will play after user interaction.");
+//     });
+// });
+document.getElementById('Play').addEventListener('click', function() {
     var audio = document.getElementById('myAudio');
-    audio.play().catch(function(error) {
-        console.log("Autoplay was prevented. Audio will play after user interaction.");
+    audio.play().then(function() {
+        console.log("Audio started playing!");
+    }).catch(function(error) {
+        console.log("Autoplay failed: ", error);
     });
 });
