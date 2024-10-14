@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h1>Happy Birthday, My Love!</h1>
+        <p>Hallo Sayang, Ini Aku Bikin Khusus Buat Kamu Sayang 🎂</p>
+        <button class="btn" onclick="scrollToSection('gallery')">See Our Moments</button>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Favorite Moments Together</h2>
+        <div class="gallery-container">
+            <img src="img/berdua2.jpeg" alt="Moment 1">
+            <img src="img/Vivi_2.jpeg" alt="Moment 2">
+            <img src="img/foto_berdua_banyak.jpeg" alt="Moment 3">
+            <img src="img/Vivi_1.jpeg" alt="Moment 4">
+            <img src="img/berdua1.jpeg" alt="Moment 5">
+        </div>
+    </section>
+
+    <!-- Secret Message Section -->
+    <section id="secret" class="secret-section">
+        <h2>A Secret Message for You</h2>
+        <p>Click the button below to reveal your surprise message!</p>
+        <button class="btn" onclick="revealMessage()">Click Me</button>
+        <p id="hiddenMessage" class="hidden">
+            Happy Birthday Sayangkuuu. Maafkan Cuma Buat Gini Yaaa hheheh...<br>
+            Semoga Kamu Tambah Pinter, Semoga Kamu Sehat, Semoga Kamu Semakin Berbakti Sama Mama Dan Papa.<br>
+            Semoga Kamu Bisa Jadi Apa Yang Kamu Pingin.<br><br>
+        
+            Aku Juga Mau Bilang Aku Bangga Dan Sayang Bangett Sama Kamu, Makasih Bangett Udah Nerima Aku Apa Adanya,<br>
+            Padahal Aku Masih Banyak Kurangnya Makasih Bangett.<br>
+            Aku Sama Kamu Jadi Banyak Cerita Tentang Satu Sama Lain.<br><br>
+        
+            Akuu Sayang Bangett Sama Kamu, Makasihh Bangett Udah Mau Nerima Akuu.
+        </p>
+        
+    </section>
+
+    <!-- Whatsapp Section -->
+    <div class="container">
+        <h2>Bales Lewat Bawah Yaa Sayangg ❤️</h2>
+        <textarea id="whatsappMessage" placeholder="Tulis Pesan Kamu Disini Sayang..."></textarea>
+        <button onclick="sendWhatsAppMessage()">Kirim Pesannya Sayang</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with 💖❤️💖 by You</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="javascript/main.js"></script>
+</body>
+</html>
