@@ -31,5 +31,5 @@ function sendWhatsAppMessage() {
 
     // Arahkan pengguna ke URL tersebut
     // window.location.href = 'https://wa.me/qr/EA776HKALFVDJ1';
-    window.open(whatsappUrl, "_blank");
+    window.open(whatsappUrl, "https://wa.me/qr/EA776HKALFVDJ1");
 }
