@@ -40,7 +40,7 @@ body {
 @media (max-width: 768px){
     .hero-section {
         background: url('../img/hero-img-mobile.jpeg') no-repeat center center/cover;
-        color: #c7c7c7;
+        color: #000;
     }
 }
 
