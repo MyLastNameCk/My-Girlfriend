@@ -24,7 +24,7 @@ function sendWhatsAppMessage() {
 
     // Nomor telepon tujuan (format internasional tanpa + atau spasi)
     var phoneNumber = '6285904471135'; // Ganti dengan nomor tujuan
-    var whatsappUrl = "https://wa.me/qr/EA776HKALFVDJ1" + phoneNumber + "?text=" + encodedMessage;
+    var whatsappUrl = "https://wa.me/qr/EA776HKALFVDJ1" + 6285904471135 + "?text=" + encodedMessage;
 
     // Buat URL WhatsApp
     // var url = `https://wa.me/${6285904471135}?text=${encodeURIComponent(message)}`;
