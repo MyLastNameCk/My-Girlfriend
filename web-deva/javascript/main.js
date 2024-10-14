@@ -21,7 +21,7 @@ function sendWhatsAppMessage() {
     }
     
     var formattedMessage = "from Vivi to you: " + message;
-    var encodedMessage = encodeURIComponent(message);
+    var encodedMessage = encodeURIComponent(formattedMessage);
 
     var phoneNumber = '6285904471135'; // Ganti dengan nomor tujuan
     var whatsappUrl = "https://wa.me/" + 6285904471135 + "?text=" + encodedMessage;
