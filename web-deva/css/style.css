@@ -30,7 +30,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url('img/hero-background.jpg') no-repeat center center/cover;
+    background: url('img/berdua1.jpeg') no-repeat center center/cover;
     height: 100vh;
     text-align: center;
     color: var(--hero-text-color);
