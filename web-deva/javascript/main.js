@@ -19,7 +19,7 @@ function sendWhatsAppMessage() {
         alert('Tolong tulis pesan terlebih dahulu!');
         return;
     }
-    
+
     var formattedMessage = "from Vivi to you: " + message;
     var encodedMessage = encodeURIComponent(formattedMessage);
 
@@ -28,3 +28,11 @@ function sendWhatsAppMessage() {
 
     window.open(whatsappUrl, "_blank");
 }
+
+// Play Music
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('myAudio');
+    audio.play().catch(function(error) {
+        console.log("Autoplay was prevented. Audio will play after user interaction.");
+    });
+});
